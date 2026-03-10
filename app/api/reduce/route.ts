@@ -234,7 +234,6 @@ async function reduceWithOpenAI(
             content: `原文：${originalText}`,
           },
         ],
-        temperature: 0.7,
       }),
     })
 
@@ -323,9 +322,6 @@ async function reduceWithGemini(
               parts: [{ text: prompt }, { text: `原文：${originalText}` }],
             },
           ],
-          generationConfig: {
-            temperature: 0.7,
-          },
         }),
       })
 

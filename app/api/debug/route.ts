@@ -31,9 +31,7 @@ export async function POST(request: NextRequest) {
             parts: [{ text: "Hello, please respond with a simple 'Hello, world!'" }],
           },
         ],
-        generationConfig: {
-          temperature: 0.7,
-        },
+
       }
 
       response = await fetch(apiUrl, {
@@ -57,7 +55,6 @@ export async function POST(request: NextRequest) {
             content: "Hello, please respond with a simple 'Hello, world!'",
           },
         ],
-        temperature: 0.7,
       }
 
       response = await fetch(apiUrl, {
