@@ -27,7 +27,6 @@ export async function reducePaper(
             content: `原文：${originalText}`,
           },
         ],
-        temperature: 0.7,
       }),
     })
 
@@ -187,7 +186,7 @@ function getChinesePrompt(): string {
 代码/标识符旁括号： 对于紧跟在代码、文件名、类名旁的括号，通常直接移除括号。
 示例：视图 (views.py) 中 -> 视图也就是views.py中
 示例：权限类 (admin_panel.permissions) -> 权限类 admin_panel.permissions
-句式微调与口语化倾向（Sentence Structure & Colloquial Touch）：
+句式微调��口语化倾向（Sentence Structure & Colloquial Touch）：
 
 使用"把"字句： 在合适的场景下，倾向于使用"把"字句。
 示例："会将对象移动" -> "会把对象移动"
